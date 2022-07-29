@@ -12,4 +12,3 @@ for i in range(C):
         if j > avr:
             cnt += 1
     print(f'{(cnt/len(rest)*100):.3f}%')
-# (round((cnt/len(rest)*100),3),'%')
