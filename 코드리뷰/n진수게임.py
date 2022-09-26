@@ -20,7 +20,9 @@ def solution(n, t, m, p):
     # result에서 튜브가 말 할 숫자 뽑아서 answer에 담기
     for i in range(len(result)//m):
         answer += result[i*m+p-1]
-    return answer
+        if len(answer) == t:
+            break
+    return answer, result, num
 
 
 # 10진수 num을 n진수로 바꾸는 함수
